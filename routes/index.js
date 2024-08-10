@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/mensaje", (req, res) => {
-    res.send("Hola mundo 2.0!");
+router.get("/ruta1", (req, res) => {
+    res.send("Nombre: Santiago");
 });
 
-router.get("/message", (req, res) => {
-    res.send("Hola mundo 3.0!");
+router.get("/ruta2", (req, res) => {
+    res.send("Apellido: Rinaldi");
 });
 
-router.get("/api", (req, res) => {
-    res.send("Hola mundo 4.0!");
+router.get("/ruta3", (req, res) => {
+    res.send("Telefono: 3537554351");
 });
 
 module.exports = router;
